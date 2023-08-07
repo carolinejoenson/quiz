@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link type="text/css" rel="stylesheet" href="print.css" media="print">
+    </head>
+    <body>
+        <nav>
+            <ol id="navOl">
+                <li class="navLi">Home</li>
+                <li class="navLi" id="liSignIn"><a href="index2.html">Sign In</a></li>
+                <li class="navLi" id="liScore"><a href="index3.html">Score</a></li>
+                <li class="navLi" id="liSignOut">Sign out</li>
+            </ol>
+        </nav>
+        <header>
+            <h1 id="header">Quiz</h1>
+        </header>
+        <main>
+            <section>
+                <div id="modalContainerPointHasBeenUpdated">
+                    <div id="modalContent">
+                        <p>One point has been added to your score!</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p>Create sheets of questions, answers and response forms by entering the data in the form below and then click the print button.
+                    <br>
+                    <br>
+                    Sign in to score points for each new question you create.
+                </p>
+            </section>
+            <section>
+                <div id="enterQuestionAndAnswer">
+                    <form id="newQuestionAndAnswerForm">
+                        <fieldset>
+                            <legend><h2>Enter data</h2></legend>
+                            <div class="containerInput">
+                                <div class="label">
+                                    <label for="inputImage"><strong>Select image </strong>(optional)<strong>:</strong></label>
+                                </div>
+                                <br>
+                                <input id="inputImage" type="file" accept="image/jpeg" name="file"></input>
+                                <div id="containerForImagePreview"></div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="label">
+                                    <label for="textareaQuestion"><strong>Question:</strong></label>
+                                </div>
+                                <textarea id="textareaQuestion" rows="2" cols="70" required></textarea>
+                            </div>
+                            <div class="containerInput">
+                                <div class="label">
+                                    <label for="textareaAnswer"><strong>Answer:</strong></label>
+                                </div>
+                                <textarea id="textareaAnswer" rows="2" cols="70" required></textarea>
+                            </div>
+                            <div class="containerInput">
+                                <div class="label">
+                                    <label for="inputPoints"><strong>Points:</strong></label>
+                                </div>
+                                <input id="inputPoints" type="number" required>
+                            </div>
+                            <button type="submit"><strong>Add to quiz</strong></button>
+                        </fieldset>
+                    </form>
+                    <div id="containerPrintButton">
+                        <button type="button" id="printButtonSingleQuestionOnEachPage"><strong>Print quiz</strong></button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="containerDisplayQuestionAndAnswer">
+                    <h2 id="h2Questions">Questions</h2>
+                    <div class="containerOl" id="containerOlQuestions">
+                        <ol type="1" class="olDisplayQuestionAndAnswer" id="displayQuestion"></ol>
+                    </div>
+                    <h2 id="h2Answers">Answers</h2>
+                    <div class="containerOl" id="containerOlAnswers">
+                        <ol type="1" class="olDisplayQuestionAndAnswer" id="displayAnswer"></ol>
+                    </div>
+                    <h2 id="h2ResponseForm">Response form</h2>
+                    <div class="containerOl" id="containerOlResponseForm">
+                        <ol type="1" class="olDisplayQuestionAndAnswer" id="displayResponseForm"></ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script type="module" src=app.js></script>
+</html>
