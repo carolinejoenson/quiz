@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+p, label {
+    text-align: center;
+    font-size: 1em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+#modalContainerPointHasBeenUpdated {
+    display: none;
+    position: fixed;
+    right: 60px;
+    top: 80px;
+    width: 200px; 
+    height: 125px; 
+    overflow: auto; 
+    border: 1px solid rgb(136, 136, 136);
+    box-shadow: 7px 5px 5px rgb(136, 136, 136);
+}
+
+#modalContent {
+    text-align: center;
+    color: black;
+    padding-top: 35px;
+}
+
+#containerPrintButton, #h2Questions, #h2Answers, #h2ResponseForm {
+    display: none;
+}
+
+
+#enterQuestionAndAnswer {
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+    
+}
+
+.containerInput, button {
+    margin: 15px;
+}
+
+#inputImage {
+    width: 160px;
+}
+
+textarea {
+    font-family: Roboto;
+    font-size: 1em;
+}
+
+#textareaQuestion {
+    padding: 10px;
+}
+
+#textareaAnswer {
+    padding: 10px;
+}
+
+#inputPoints {
+    height: 20px;
+    width: 50px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+}
+
+.olDisplayQuestionAndAnswer {
+    list-style-position: inside;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    padding: 0px;
+}
+
+li {
+    border: solid black 1px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.containerImageInSubmittedQuestion {
+    text-align: center;
+}
+
+#displayResponseForm li {
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+#containerOlResponseForm {
+    margin-bottom: 75px;
+}
+
+#navOl {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.navLi {
+    border: none;
+}
+
+#liSignOut {
+    display: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*index2.html:*/
+#formSignIn {
+    display: flex;
+    justify-content: center;
+}
+
+.fieldsetSignInOrCreateUser {
+    border: solid black 1px;
+    width: 67px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+legend {
+    text-align: center;
+}
+
+.ulSignInOrCreateUserForm {
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.liSignInOrCreateUserForm {
+    border: none;
+    margin: 0px;
+    padding: 7px;
+}
+
+#containerButtonNewUser{
+    display: flex;
+    justify-content: center;
+}
+
+#containerButtonSignIn{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonSignIn {
+    display: none;
+}
+
+#buttonNewUser, #buttonSignIn {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+#liScore {
+    display: none;
+}
+
+#formCreateUser {
+    display: none;
+    justify-content: center;
+}
+
+/*index3.html:*/
+#liSignOutScoreView {
+    cursor: pointer;
+}
+
+#score {
+    text-align: center;
+    font-size: 4em;
+}

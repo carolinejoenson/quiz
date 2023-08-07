@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <ol id="navOl">
+                <li class="navLi"><a href="index.html">Home</a></li>
+                <li class="navLi">Sign In</li>
+            </ol>
+        </nav>
+        <header>
+            <h1 id="header2">Quiz</h1>
+        </header>
+        <main>
+            <section>
+                <form id="formSignIn" method="post">
+                    <fieldset class="fieldsetSignInOrCreateUser">
+                            <legend><strong>Sign in to save quiz</strong></legend>
+                            <ul class="ulSignInOrCreateUserForm">
+                                <li class="liSignInOrCreateUserForm">
+                                    <label for="usernameSignIn">Enter username: </label>
+                                    <input id="usernameSignIn" type="text" placeholder="username" required></input>
+                                </li>
+                                <li class="liSignInOrCreateUserForm">
+                                    <label for="passwordSignIn">Enter password: </label>
+                                    <input id="passwordSignIn" type="password" placeholder="password" required></input>
+                                </li>
+                                <li class="liSignInOrCreateUserForm">
+                                    <button type="submit">Sign in</button>
+                                </li>
+                            </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <div id="containerButtonNewUser">
+                    <button type="button" id="buttonNewUser"><strong>New user</strong></button>
+                </div>
+            </section>
+            <form id="formCreateUser" method="post">
+                <fieldset class="fieldsetSignInOrCreateUser">
+                        <legend><strong>Create user to sign in</strong></legend>
+                        <ul class="ulSignInOrCreateUserForm">
+                            <li class="liSignInOrCreateUserForm">
+                                <label for="usernameCreateUser">Enter username: </label>
+                                <input id="usernameCreateUser" type="text" placeholder="username" required></input>
+                            </li>
+                            <li class="liSignInOrCreateUserForm">
+                                <label for="passwordCreateUser">Enter password: </label>
+                                <input id="passwordCreateUser" type="password" placeholder="password" required></input>
+                            </li>
+                            <li class="liSignInOrCreateUserForm">
+                                <button type="submit" id="submitButtonCreateUser">Create user</button>
+                            </li>
+                        </ul>
+                </fieldset>
+            </form>
+            <section>
+                <div id="containerButtonSignIn">
+                    <button type="button" id="buttonSignIn">or&nbsp;<strong>Sign in</strong></button>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script type="module" src=app2.js></script>
+</html>
